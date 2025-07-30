@@ -28,6 +28,9 @@ jobs:
       node_js: "20"
       os: linux
     - stage: build
+      node_js: "22"
+      os: linux
+    - stage: build
       node_js: "10"
       os: osx
     - stage: build
@@ -49,6 +52,10 @@ jobs:
       osx_image: xcode13.1
     - stage: build
       node_js: "20"
+      os: osx
+      osx_image: xcode13.1
+    - stage: build
+      node_js: "22"
       os: osx
       osx_image: xcode13.1
 addons:
