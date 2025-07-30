@@ -39,7 +39,7 @@ request
       });
       return;
     }
-    if (response.statusCode === 404) {
+    if (response.statusCode === 404 || response.statusCode === 403) {
       throw new Error(
         `No supported node-libpng ${packageVersion} build found for node ${process.version} on ${process.platform} (${process.arch}).`
       );
