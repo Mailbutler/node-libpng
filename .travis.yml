@@ -26,15 +26,6 @@ addons:
       - git
 before_install:
   - npm install -g yarn
-  - if [ $TRAVIS_OS_NAME == "linux" ]; then
-    export CC="gcc-7";
-    export CXX="g++-7";
-    export LINK="gcc-7";
-    export LINKXX="g++-7";
-    sed -i '911s!^!//!' deps/libpng/pngpriv.h;
-    else
-    sed -i '' '911s/^/\/\/ /' deps/libpng/pngpriv.h;
-    fi
   - node --version
   - yarn --version
 script:
