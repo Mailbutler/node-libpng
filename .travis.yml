@@ -1,4 +1,4 @@
-dist: focal
+dist: noble
 language: node_js
 compiler: gcc
 env:
