@@ -219,6 +219,6 @@
 #define PNG_Z_DEFAULT_NOFILTER_STRATEGY 0
 #define PNG_Z_DEFAULT_STRATEGY 1
 #define PNG_ZBUF_SIZE 8192
-#define PNG_ZLIB_VERNUM 0x1310
+#define PNG_ZLIB_VERNUM 0x1301
 /* end of settings */
 #endif /* PNGLCONF_H */
